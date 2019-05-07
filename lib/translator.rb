@@ -12,12 +12,8 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file, emo)
-  emos = load_library(file)
-  if emos["get_emoticon"][emo] == nil
-    return "Sorry, that emoticon was not found"
-  else
-    emos["get_emoticon"][emo]
-  end
+  dict = load_library(file)
+  dict["get_emoticon"][emo].nil?  "Sorry, that emoticon was not found" : dict["get_emoticon"][emo]
 end
 
 def get_english_meaning
