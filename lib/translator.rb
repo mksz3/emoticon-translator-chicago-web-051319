@@ -6,12 +6,12 @@ def load_library(file_path)
     "get_meaning" => {},
     "get_emoticon" => {},
   }
-  emos.each do |meaning, emo|
+  emos.each { |meaning, emo|
     english = emo[0]
     japanese = emo[1]
     output["get_meaning"][japanese] = meaning
     output["get_emoticon"][english] = japanese
-  end
+  }
   output
 end
 
