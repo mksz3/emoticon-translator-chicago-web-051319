@@ -1,6 +1,4 @@
-# require modules here
-require relative emoticons.yml
-
+require "yaml"
 def load_library(file_path)
   emos = YAML.load_file("lib/emoticons.yml")
   output = {
