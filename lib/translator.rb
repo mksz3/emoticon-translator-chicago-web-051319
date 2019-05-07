@@ -17,5 +17,6 @@ def get_japanese_emoticon(file, emo)
 end
 
 def get_english_meaning
-  
+  dict = load_library(file)
+  dict["get_emoticon"][emo].nil? ? "Sorry, that emoticon was not found" : dict["get_emoticon"][emo]
 end
