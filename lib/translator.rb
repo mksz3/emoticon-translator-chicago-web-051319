@@ -13,10 +13,10 @@ end
 
 def get_japanese_emoticon(file, emo)
   emos = load_library(file)
-  if emos["get_emoticon"][emoticon] == nil
+  if emos["get_emoticon"][emo] == nil
     return "Sorry, that emoticon was not found"
   else
-    emos["get_emoticon"][emoticon]
+    emos["get_emoticon"][emo]
   end
 end
 
