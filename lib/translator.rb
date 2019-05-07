@@ -18,5 +18,5 @@ end
 
 def get_english_meaning
   dict = load_library(file)
-  dict["get_emoticon"][emo].nil? ? "Sorry, that emoticon was not found" : dict["get_emoticon"][emo]
+  dict["get_meaning"][emo].nil? ? "Sorry, that emoticon was not found" : dict["get_meaning"][emo]
 end
